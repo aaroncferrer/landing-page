@@ -425,6 +425,89 @@ ul {
     transition: 0.2s;
 }
 
+
+/* -----------> FORM <----------- */
+.contact-container {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 120px;
+    font-weight: bolder;
+}
+
+.contact h1 {
+    margin: 5px 0px 20px;
+}
+
+.contact h3 {
+    margin-bottom: 10px;
+}
+
+.phone-heading {
+    margin-top: 30px;
+}
+
+.contact p {
+    letter-spacing: 1px;
+    margin: 5px 0px;
+}
+
+.connect {
+    padding-top: 20px;
+}
+
+.socmed {
+    cursor: pointer;
+    color: #7c97c6;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.socmed:hover {
+    color: #5174af;
+}
+
+form {
+    width: 50%;
+    background-color: #58b5c1;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.input {
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 5px 0 15px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#submit {
+    color: white;
+    margin: 10px 0px 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 1px;
+}
+
+#submit:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.3s;
+}
+
 /* -----------> FOOTER <----------- */
 
 #footer {
@@ -762,6 +845,21 @@ ul {
     .payment-option p {
         font-size: 12px;
         margin: 15px 0px;
+    }
+
+    .contact-container {
+        padding: 25px;
+        flex-direction: column;
+    }
+
+    .contact h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    form {
+        margin-top: 35px;
+        width: 100%;
     }
 
     #footer-text {
