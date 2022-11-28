@@ -1,4 +1,4 @@
-/* -----------> CSS RESET <----------- */
+/* -----------> //CSS RESET <----------- */
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
 }
 
-/* -----------> NAVBAR <----------- */
+/* -----------> //NAVBAR <----------- */
 
 .logo {
     cursor: pointer;
@@ -83,7 +83,7 @@ ul {
     display: none;
 }
 
-/* -----------> MAIN SECTION <----------- */
+/* -----------> //MAIN SECTION <----------- */
 .main-div {
     background: url('./assets/ps5-hero.jpg') center center/cover no-repeat;
     height: 100vh;
@@ -159,7 +159,7 @@ ul {
     transition: 0.4s;
 }
 
-/* -----------> FEATURES <----------- */
+/* -----------> //FEATURES <----------- */
 .features-container {
     background-color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -224,7 +224,7 @@ ul {
     font-weight: bold;
 }
 
-/* -----------> DESCRIPTION 1 <----------- */
+/* -----------> //DESCRIPTION 1 <----------- */
 .desc1-container {
     display: flex;
     background-color: #e4e6eb;
@@ -273,7 +273,7 @@ ul {
 	}
 }
 
-/* -----------> INTERFACE<----------- */
+/* -----------> //INTERFACE<----------- */
 
 .interface-container {
     padding: 50px 50px 0px;
@@ -304,7 +304,7 @@ ul {
 }
 
 
-/* -----------> DESCRIPTION 2 <----------- */
+/* -----------> //DESCRIPTION 2 <----------- */
 .desc2-container {
     display: flex;
     margin-top: -30px;
@@ -354,7 +354,7 @@ ul {
     transition: 0.2s;
 }
 
-/* -----------> PAYMENTS <----------- */
+/* -----------> //PAYMENTS <----------- */
 .payments-container {
     background-color: #e4e6eb;
     box-shadow: inset 0px 0px 40px  rgba(0,0,0,0.15);
@@ -426,7 +426,7 @@ ul {
 }
 
 
-/* -----------> FORM <----------- */
+/* -----------> //FORM <----------- */
 .contact-container {
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -480,6 +480,12 @@ form h2 {
     color: white;
 }
 
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+}
+
 .input {
     letter-spacing: 1px;
     width: 100%;
@@ -508,7 +514,7 @@ form h2 {
     transition: 0.3s;
 }
 
-/* -----------> FOOTER <----------- */
+/* -----------> //FOOTER <----------- */
 
 #footer {
     width: 100%;
@@ -523,7 +529,7 @@ form h2 {
 }
 
 
-/* -----------> RESPONSIVENESS <----------- */
+/* -----------> //RESPONSIVENESS <----------- */
 
 @media (max-width: 914px){
     .hero-section p {
@@ -653,6 +659,14 @@ form h2 {
     
     .payment-option p {
         margin: 30px 20px;
+    }
+
+    .form-container {
+        display: block;
+    }
+    
+    .contact-container {
+        padding: 50px;
     }
 
 }
@@ -867,5 +881,4 @@ form h2 {
     }
     
 }
-
 

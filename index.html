@@ -28,7 +28,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#payments">Payment</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
             <div class="sign-up">SIGN UP</div>
             
@@ -172,7 +172,7 @@
 
     <div class="contact-container">
 
-        <div class="contact">
+        <div class="contact" id="contact">
             <h1>CONTACT US</h1>
             <h3>Email</h3>
             <p>sonyph@mail.com</p>
@@ -193,25 +193,39 @@
             </div>
         </div>
 
-        <form>
+        <form action="./page.html" onsubmit="getInput()">
             <h2>Order Form</h2>
 
+            <div class="form-container">
+            <div>    
             <label for="fullname" class="labels">Name</label>
-            <input type="text" placeholder="Enter Your Name Here" required class="input">
+            <input type="text" name="fullname" id="fullname" placeholder="Enter Your Name Here" class="input">
+            </div>
 
+            <div>    
             <label for="email" class="labels">Email Address</label>
-            <input type="text" placeholder="Enter Your Email Here" required class="input">
+            <input type="email" name="email" id="email" placeholder="Enter Your Email Here" required class="input">
+            </div>
 
+            <div>   
             <label for="number" class="labels">Contact No.</label>
-            <input type="text" placeholder="Enter Your Number Here" required class="input">
+            <input type="text" name="number" id="number" placeholder="Enter Your Number Here" required class="input">
+            </div>     
 
+            <div>      
             <label for="color" class="color">Console Color</label>
-            <select name="color" class="input">
+            <select name="color" class="input" id="color">
                 <option value="white">White</option>
                 <option value="white">Black</option>
                 <option value="colored">Colored</option>
                 <option value="random">Random</option>
             </select>
+            </div>  
+           
+            </div>
+
+            <label for="message" class="color">Message</label>
+            <textarea name="message" class="input" rows="7" id="message"></textarea>
 
             <input type="submit" value="PLACE ORDER" id="submit">
         </form>
